@@ -7,3 +7,21 @@ th, td, caption{
     ;
 
 }
+
+
+.container {
+    display: inline-block;
+    
+    
+}
+.container section:last-child{
+    vertical-align: top;
+
+    
+}   
+
+
+.evidence{
+    font-weight: bold;
+    color: red;
+}   
