@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Tabelle</a></li>
+                <li><a href="from.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="get" action="grazie.html">
+        <!-- input fields -->
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Inserisci il nome completo" required />
+        <label for="adress">Indirizzo:</label>
+        <input type="text" id="adress" name="adress" placeholder="Inserisci l'indirizzo completo" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Inserisci l'email" required />
+        <br />
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Inserisci il username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Inserisci la password" required />
+        <label for="date">Data di iscrizione:</label>
+        <input type="date" id="joindate" name="joindate" />
+        <br />
+        <label for="numberofcourses">Numero di corsi:</label>
+        <input type="number" id="numberofcourses" name="numberofcourses"
+            placeholder="Inserisci il numero di corsi seguiti" min="0" max="100" />
+        <label for="frequency">
+            <h4>Frequenza:</h4>
+        </label>
+        <!--select-->
+        <select id="frequency" name="frequency">
+            <option value="selected"></option>
+            <option value="fulltime">full time</option>
+            <option value="parttime">part time</option>
+            <option value="serale">serale</option>
+        </select>
+        <br> <br />
+
+         <!-- textarea -->
+        <label for="message">Messaggio:</label>
+
+        <textarea id="message" name="message" rows="3" cols="50" placeholder="inserisci il tuo messaggio
+        "></textarea>
+        <!-- checkbox e radio buttons -->
+         <h4>Interessi:</h4>
+        <input type="checkbox" id="html" name="interest" value="html">
+        <label for="html">HTML</label> <br />
+        <input type="checkbox" id="css" name="interest" value="css">
+        <label for="css">CSS</label> <br />
+        <input type="checkbox" id="javascript" name="interest" value="javascript">
+        <label for="javascript">JavaScript</label> <br />
+        <input type="checkbox" id="python" name="interest" value="python">
+        <label for="python">Python</label> <br />
+        <br /> <br />
+
+        <h4>seleziona corso</h4>
+        <!-- radio buttons per far si che venga selezionato un solo corso alla volta bisogna dare lo stesso nome a tutti i radio buttons -->
+        <input type="radio" id="fullstack" name="course" value="fullstack">
+        <label for="fullstack">Full Stack</label> <br />
+        <input type="radio" id="frontend" name="course" value="frontend">
+        <label for="frontend">Frontend</label> <br />
+        <input type="radio" id="backend" name="course" value="backend">
+        <label for="backend">Backend</label> <br />
+
+        <p>&nbsp;</p>
+        <!-- buttons -->
+        <button type="submit" value="Invia">
+            Invia
+        </button>
+        <button type="reset" value="Reset">
+            cancella
+        </button>
+    </form>
+
+</body>
+
+</html>
